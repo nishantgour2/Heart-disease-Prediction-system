@@ -1,0 +1,32 @@
+.w3-bar{
+  width:100%;
+  overflow:hidden
+}
+
+.w3-bar .w3-bar-item{
+  padding:8px 16px;
+  float:left;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0
+}
+
+.w3-right
+{
+  float:right!important
+}
+
+
+.w3-jumbo{
+  font-size:64px!important
+}
+.w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
+
+.cd{
+  border-radius: 25px;
+    border: 2px ;
+}
+.aas{
+  width: 200px;
+}

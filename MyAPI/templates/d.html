@@ -1,0 +1,96 @@
+
+{% load static %}
+{% load staticfiles %}  
+<!DOCTYPE html>
+<html>
+<title>AyuNish</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("{% static 'images/dail.jpg' %}");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="work.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Be aware For Your Heart</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Heart Disease Prediction</span><br><br><br>
+    <h2 style="padding-left: 150px">Your Result :</h2><br><br>
+
+
+    {% if  fin %}
+    <h2 style="padding-left: 100px">You are under risk  | Result : Positive</h2><br><br>
+    <a href="#work" style="padding-left: 100px"><i class="fa fa-th">Click TO Contact Specialist</i> </a>
+
+
+
+{% else %}
+<h2 style="padding-left: 150px">You are Out of risk | Result Negative</h2><br><br>
+
+
+{% endif %}
+
+    
+
+  </div>
+
+</header>
+
+
+
+
+
+
+
+
+</body>
+</html>
